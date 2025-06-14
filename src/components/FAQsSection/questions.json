@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "question": "O que é o aplicativo de rastreamento?",
+    "response": "É uma plataforma que permite acompanhar em tempo real a localização de seus veículos, entregas ou objetos monitorados."
+  },
+  {
+    "id": 1,
+    "question": "Como faço para começar a usar o rastreamento?",
+    "response": "Basta criar uma conta, cadastrar o dispositivo ou código de rastreio e acompanhar tudo pelo painel do aplicativo."
+  },
+  {
+    "id": 2,
+    "question": "O rastreamento funciona em tempo real?",
+    "response": "Sim, o sistema atualiza constantemente as posições com base nos dados recebidos do dispositivo ou serviço de rastreio."
+  },
+  {
+    "id": 3,
+    "question": "Preciso instalar algum dispositivo no meu veículo?",
+    "response": "Depende do serviço. Para rastreamento de veículos, sim. Para rastreamento de encomendas, apenas o código de rastreio é suficiente."
+  },
+  {
+    "id": 4,
+    "question": "Posso rastrear mais de um item ao mesmo tempo?",
+    "response": "Sim, você pode acompanhar múltiplos itens simultaneamente no seu painel."
+  },
+  {
+    "id": 5,
+    "question": "Quais tipos de rastreamento são suportados?",
+    "response": "Suportamos rastreamento de veículos, encomendas, pessoas e objetos com dispositivos compatíveis."
+  },
+  {
+    "id": 6,
+    "question": "Como sei se meu rastreador está funcionando corretamente?",
+    "response": "Você verá atualizações frequentes de localização e notificações no seu painel quando o dispositivo estiver ativo."
+  },
+  {
+    "id": 7,
+    "question": "Existe um limite de rastreamentos por conta?",
+    "response": "Os planos gratuitos têm um limite. Planos premium permitem rastrear mais dispositivos simultaneamente."
+  },
+  {
+    "id": 8,
+    "question": "Consigo compartilhar o rastreamento com outra pessoa?",
+    "response": "Sim, você pode gerar um link de acesso temporário para terceiros acompanharem a rota em tempo real."
+  },
+  {
+    "id": 9,
+    "question": "O que acontece se o dispositivo perder sinal?",
+    "response": "O último local registrado será exibido e o sistema alertará que o dispositivo está offline até reconectar."
+  },
+  {
+    "id": 10,
+    "question": "Os dados são protegidos e seguros?",
+    "response": "Sim, usamos criptografia de ponta a ponta para garantir que suas informações estejam sempre seguras."
+  },
+  {
+    "id": 11,
+    "question": "O rastreamento funciona fora do Brasil?",
+    "response": "Sim, desde que o dispositivo tenha suporte internacional e acesso à rede de dados no local."
+  }
+]

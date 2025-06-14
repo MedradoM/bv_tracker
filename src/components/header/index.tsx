@@ -1,5 +1,6 @@
 "use client";
 
+import { useScrollContext } from "@/context/scrollContext";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,17 +21,32 @@ const navigation = [
     href: "/#depoimentos",
   },
   {
+    name: "Pergunstas Frequentes",
+    href: "/#perguntas-frequentes",
+  },
+  {
     name: "Contato",
     href: "/#contato",
   },
 ];
 
 const Header = () => {
+  const { isScrolled } = useScrollContext();
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-screen z-50 fixed flex justify-center top-0 left-0">
-      <div className="container relative px-[4vw] flex justify-between items-center py-2">
+    <header
+      className={twMerge(
+        "w-screen bg-transparent transition-all z-50 fixed flex justify-center lg:pt-4 top-0 left-0"
+      )}
+    >
+      <div
+        className={twMerge(
+          "container bg-transparent transition-all relative px-[4vw] flex justify-between items-center py-2",
+          isScrolled &&
+            "bg-zinc-200/50 backdrop-blur-lg  shadow-lg rounded-b-3xl lg:rounded-xl"
+        )}
+      >
         <motion.div
           initial={{ opacity: 0, filter: "blur(4px)" }}
           animate={{ opacity: 1, filter: "blur(0)" }}
@@ -41,8 +57,8 @@ const Header = () => {
 
         <div
           className={twMerge(
-            "flex items-center gap-4 lg:bg-transparent lg:flex-row lg:static lg:h-full lg:w-fit fixed right-0 top-0 max-h-0 lg:max-h-full  bg-zinc-200/20 backdrop-blur-lg border-2 h-full lg:border-0 overflow-hidden lg:overflow-auto transition-all border-white w-full flex-col justify-center",
-            open && "max-h-screen slide-in-from-top"
+            "flex items-center text-slate-800 gap-4 lg:bg-transparent lg:flex-row lg:static lg:h-full lg:w-fit fixed right-0 top-0 min-h-0 max-h-0 lg:min-h-full bg-zinc-200/20 lg:backdrop-blur-none backdrop-blur-lg border-2 h-full lg:border-0 overflow-hidden lg:overflow-auto transition-all border-white w-full flex-col justify-center",
+            open && "max-h-screen min-h-screen slide-in-from-top"
           )}
         >
           {navigation.map((item, index) => (
