@@ -15,7 +15,10 @@ const DefaultSectionContainer = ({
 }: TDefaultSectionContainer) => {
   return (
     <section
-      className={twMerge("w-full py-32 z-10 flex justify-center", className)}
+      className={twMerge(
+        "w-full py-32 my-32 z-10 flex justify-center",
+        className
+      )}
       id={id}
     >
       <div

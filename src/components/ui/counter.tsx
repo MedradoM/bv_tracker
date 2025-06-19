@@ -1,5 +1,6 @@
 import NumberFlow from "@number-flow/react";
-import { useEffect, useState } from "react";
+import { useInView } from "motion/react";
+import { useEffect, useRef, useState } from "react";
 import { ClassNameValue, twMerge } from "tailwind-merge";
 
 type TCounter = {
@@ -22,23 +23,27 @@ const Counter = ({
   startValue = 0,
 }: TCounter) => {
   const [count, setCount] = useState(startValue);
+  const Ref = useRef<HTMLDivElement | null>(null);
+  const inView = useInView(Ref, { once: true });
 
   useEffect(() => {
-    if (count >= value) return;
+    if (inView) {
+      if (count >= value) return;
 
-    const step = Math.ceil((value - count) / 20);
-    const interval = setInterval(() => {
-      setCount((prev) => {
-        const next = prev + step;
-        return next >= value ? value : next;
-      });
-    }, duration / 20);
+      const step = Math.ceil((value - count) / 20);
+      const interval = setInterval(() => {
+        setCount((prev) => {
+          const next = prev + step;
+          return next >= value ? value : next;
+        });
+      }, duration / 20);
 
-    return () => clearInterval(interval);
-  }, [value, duration, count]);
+      return () => clearInterval(interval);
+    }
+  }, [value, duration, count, inView]);
 
   return (
-    <div className={twMerge("", className)}>
+    <div ref={Ref} className={twMerge("", className)}>
       <NumberFlow
         value={count}
         prefix={prefix}

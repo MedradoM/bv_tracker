@@ -44,7 +44,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen h-full  flex items-center justify-center">
       <HeroBackground />
 
-      <div className="lg:absolute flex flex-col gap-16 lg:mt-0 mt-[20vh]">
+      <div className="lg:absolute flex flex-col gap-16 lg:mt-0 mt-[8vh]">
         <div className=" lg:flex-row gap-8 flex-col self-center justify-self-center container px-[4vw] flex z-10">
           <div className="flex flex-col items-start lg:max-w-[50%] gap-2">
             <AnimatedBadge badgeContent={badgeContent} />
@@ -64,7 +64,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, filter: "blur(4px)" }}
               animate={{ opacity: 1, filter: "blur(0)" }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-base lg:text-lg"
+              className="text-base lg:text-base text-gray-700"
             >
               Tenha controle total da sua frota com nosso sistema de
               monitoramento inteligente. Acompanhe em tempo real, receba alertas

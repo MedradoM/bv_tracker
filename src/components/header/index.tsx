@@ -21,7 +21,7 @@ const navigation = [
     href: "/#depoimentos",
   },
   {
-    name: "Pergunstas Frequentes",
+    name: "Perguntas Frequentes",
     href: "/#perguntas-frequentes",
   },
   {

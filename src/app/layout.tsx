@@ -4,6 +4,7 @@ import "./globals.css";
 import { ReactLenis } from "lenis/react";
 import Header from "@/components/header";
 import ScrollProvider from "@/context/scrollContext";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
             <>
               <Header />
               {children}
+              <Footer />
             </>
           </ScrollProvider>
         </ReactLenis>
