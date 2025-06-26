@@ -8,10 +8,10 @@ import { Quote } from "lucide-react";
 
 const WhoWeAreSection = () => {
   const firstStaticRef = useRef<HTMLDivElement | null>(null);
-  const firstStaticRefInView = useInView(firstStaticRef, {once: true});
+  const firstStaticRefInView = useInView(firstStaticRef, { once: true });
   const secondStaticRef = useRef<HTMLDivElement | null>(null);
-  const secondStaticRefInView = useInView(secondStaticRef, {once: true});
-  
+  const secondStaticRefInView = useInView(secondStaticRef, { once: true });
+
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const lastScrollY = useRef(0);
   const ticking = useRef(false);
@@ -156,7 +156,10 @@ const WhoWeAreSection = () => {
         </DefaultSectionContainer>
       </div>
       <DefaultSectionContainer className="bg-white w-[98%] m-auto rounded-b-3xl justify-self-center flex self-center">
-        <div ref={firstStaticRef} className="grid gap-8 grid-cols-1 lg:items-center lg:grid-cols-2">
+        <div
+          ref={firstStaticRef}
+          className="grid gap-8 grid-cols-1 lg:items-center lg:grid-cols-2"
+        >
           <div className="col-span-1 flex flex-col gap-2">
             <SplitText
               text="Simplificando a gestão de frotas e gerando resultados"
@@ -165,12 +168,22 @@ const WhoWeAreSection = () => {
 
             <motion.div
               initial={{ opacity: 0, y: 40, filter: "blur(4px)" }}
-              animate={firstStaticRefInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
+              animate={
+                firstStaticRefInView
+                  ? { opacity: 1, y: 0, filter: "blur(0px)" }
+                  : {}
+              }
               exit={{ opacity: 0, y: 40, filter: "blur(4px)" }}
               transition={{ delay: 1 }}
               className="text-lg text-gray-600 "
             >
-              Na BV Tracker, acreditamos que a tecnologia é a chave para o sucesso, por isso sempre fornecemos soluções modernas e eficientes para ajudar a reduzir custos, aumentar a segurança e melhorar a eficiência operacional das frotas. Nossa equipe é composta por profissionais altamente capacitados e apaixonados pelo que fazem, desde [ano] em busca de inovações e melhorias para atender às necessidades dos nossos clientes.
+              Na BV Tracker, acreditamos que a tecnologia é a chave para o
+              sucesso, por isso sempre fornecemos soluções modernas e eficientes
+              para ajudar a reduzir custos, aumentar a segurança e melhorar a
+              eficiência operacional das frotas. Nossa equipe é composta por
+              profissionais altamente capacitados e apaixonados pelo que fazem,
+              desde 2020 em busca de inovações e melhorias para atender às
+              necessidades dos nossos clientes.
             </motion.div>
           </div>
           <div className="col-span-1">
@@ -180,39 +193,54 @@ const WhoWeAreSection = () => {
           </div>
         </div>
 
-        <div ref={secondStaticRef} className="grid gap-8 grid-cols-1 lg:items-center lg:grid-cols-2">
+        <div
+          ref={secondStaticRef}
+          className="grid gap-8 grid-cols-1 lg:items-center lg:grid-cols-2"
+        >
           <div className="col-span-1">
             <div className="h-[50vh] text-sm border flex items-center justify-center rounded-xl">
               imagem
             </div>
           </div>
           <div className="col-span-1 flex flex-col gap-2">
-            <SplitText
-              text="Nossa história"
-              className="lg:text-5xl text-3xl"
-            />
+            <SplitText text="Nossa história" className="lg:text-5xl text-3xl" />
 
             <motion.div
               initial={{ opacity: 0, y: 40, filter: "blur(4px)" }}
-              animate={secondStaticRefInView ? { opacity: 1, y: 0, filter: "blur(0px)" }: {}}
+              animate={
+                secondStaticRefInView
+                  ? { opacity: 1, y: 0, filter: "blur(0px)" }
+                  : {}
+              }
               exit={{ opacity: 0, y: 40, filter: "blur(4px)" }}
               transition={{ delay: 0.7 }}
               className="text-lg text-gray-600 "
             >
-              Começamos nossa jornada com uma pequena equipe de entusiastas da tecnologia, determinados a transformar o setor de gestão de frotas. Desde então, evoluímos para uma empresa reconhecida nacionalmente, com uma base sólida de clientes satisfeitos e uma reputação de excelência. 
+              Começamos nossa jornada com uma pequena equipe de entusiastas da
+              tecnologia, determinados a transformar o setor de gestão de
+              frotas. Desde então, evoluímos para uma empresa reconhecida
+              nacionalmente, com uma base sólida de clientes satisfeitos e uma
+              reputação de excelência.
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 40, filter: "blur(4px)" }}
-              animate={secondStaticRefInView ? { opacity: 1, y: 0, filter: "blur(0px)" }: {}}
+              animate={
+                secondStaticRefInView
+                  ? { opacity: 1, y: 0, filter: "blur(0px)" }
+                  : {}
+              }
               exit={{ opacity: 0, y: 40, filter: "blur(4px)" }}
               transition={{ delay: 1 }}
               className="text-sm italic text-gray-600 mt-4"
             >
-              <Quote  className="stroke-blue-800/20 rotate-180 fill-blue-800/20 size-5"/>
-              Crescemos graças à confiança dos nossos clientes e à dedicação da nossa equipe, criar uma relação de parceria com nossos clientes, entendendo suas necessidades e oferecendo soluções personalizadas. buscamos sempre inovações e melhorias para continuar a oferecer o melhor serviço possível.
+              <Quote className="stroke-primary/20 rotate-180 fill-primary/20 size-5" />
+              Crescemos graças à confiança dos nossos clientes e à dedicação da
+              nossa equipe, criar uma relação de parceria com nossos clientes,
+              entendendo suas necessidades e oferecendo soluções personalizadas.
+              buscamos sempre inovações e melhorias para continuar a oferecer o
+              melhor serviço possível.
             </motion.div>
-
           </div>
         </div>
       </DefaultSectionContainer>

@@ -2,61 +2,26 @@
   {
     "id": 0,
     "question": "O que é o aplicativo de rastreamento?",
-    "response": "É uma plataforma que permite acompanhar em tempo real a localização de seus veículos, entregas ou objetos monitorados."
+    "response": "É uma plataforma que permite acompanhar em tempo real a localização de seus veículos, condições dos seus motoristas e estatísticas úteis."
   },
   {
     "id": 1,
-    "question": "Como faço para começar a usar o rastreamento?",
-    "response": "Basta criar uma conta, cadastrar o dispositivo ou código de rastreio e acompanhar tudo pelo painel do aplicativo."
+    "question": "O que é monitoramento veicular e como funciona?",
+    "response": "O monitoramento veicular é uma tecnologia que permite acompanhar, em tempo real, a localização e o desempenho dos veículos da frota. Ele funciona por meio de rastreadores e sensores instalados nos veículos, que enviam dados para uma plataforma online."
   },
   {
     "id": 2,
-    "question": "O rastreamento funciona em tempo real?",
-    "response": "Sim, o sistema atualiza constantemente as posições com base nos dados recebidos do dispositivo ou serviço de rastreio."
-  },
-  {
-    "id": 3,
-    "question": "Preciso instalar algum dispositivo no meu veículo?",
-    "response": "Depende do serviço. Para rastreamento de veículos, sim. Para rastreamento de encomendas, apenas o código de rastreio é suficiente."
+    "question": "Como o monitoramento veicular melhora a segurança da frota? ",
+    "response": "Com a possibilidade de rastrear veículos em tempo real e configurar alertas para eventos suspeitos, o monitoramento pode reduzir os riscos de roubo, furto e uso indevido da frota."
   },
   {
     "id": 4,
-    "question": "Posso rastrear mais de um item ao mesmo tempo?",
-    "response": "Sim, você pode acompanhar múltiplos itens simultaneamente no seu painel."
-  },
-  {
-    "id": 5,
-    "question": "Quais tipos de rastreamento são suportados?",
-    "response": "Suportamos rastreamento de veículos, encomendas, pessoas e objetos com dispositivos compatíveis."
+    "question": "Qual a diferença entre rastreamento e monitoramento veicular?",
+    "response": "O rastreamento veicular informa a posição do veículo e seu trajeto. Já o monitoramento vai além, permitindo visualizar padrões de condução, consumo de combustível e outros dados estratégicos para a gestão da frota."
   },
   {
     "id": 6,
-    "question": "Como sei se meu rastreador está funcionando corretamente?",
-    "response": "Você verá atualizações frequentes de localização e notificações no seu painel quando o dispositivo estiver ativo."
-  },
-  {
-    "id": 7,
-    "question": "Existe um limite de rastreamentos por conta?",
-    "response": "Os planos gratuitos têm um limite. Planos premium permitem rastrear mais dispositivos simultaneamente."
-  },
-  {
-    "id": 8,
-    "question": "Consigo compartilhar o rastreamento com outra pessoa?",
-    "response": "Sim, você pode gerar um link de acesso temporário para terceiros acompanharem a rota em tempo real."
-  },
-  {
-    "id": 9,
-    "question": "O que acontece se o dispositivo perder sinal?",
-    "response": "O último local registrado será exibido e o sistema alertará que o dispositivo está offline até reconectar."
-  },
-  {
-    "id": 10,
-    "question": "Os dados são protegidos e seguros?",
-    "response": "Sim, usamos criptografia de ponta a ponta para garantir que suas informações estejam sempre seguras."
-  },
-  {
-    "id": 11,
-    "question": "O rastreamento funciona fora do Brasil?",
-    "response": "Sim, desde que o dispositivo tenha suporte internacional e acesso à rede de dados no local."
+    "question": "Como o monitoramento veicular ajuda a reduzir custos?",
+    "response": "O monitoramento auxilia na economia de combustível, evita deslocamentos desnecessários, melhora a manutenção preventiva e reduz o risco de multas e acidentes, impactando diretamente os custos operacionais da empresa."
   }
 ]

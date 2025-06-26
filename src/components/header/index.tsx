@@ -9,12 +9,12 @@ import { twMerge } from "tailwind-merge";
 
 const navigation = [
   {
-    name: "Quem Somos",
-    href: "/#quem-somos",
-  },
-  {
     name: "Nosso Trabalho",
     href: "/#nosso-trabalho",
+  },
+  {
+    name: "Quem Somos",
+    href: "/#quem-somos",
   },
   {
     name: "Depoimentos",
@@ -44,7 +44,7 @@ const Header = () => {
         className={twMerge(
           "container bg-transparent transition-all relative px-[4vw] flex justify-between items-center py-2",
           isScrolled &&
-            "bg-zinc-200/50 backdrop-blur-lg  shadow-lg rounded-b-3xl lg:rounded-xl"
+            "bg-background/50 backdrop-blur-lg  shadow-lg rounded-b-3xl lg:rounded-xl"
         )}
       >
         <motion.div
@@ -52,12 +52,19 @@ const Header = () => {
           animate={{ opacity: 1, filter: "blur(0)" }}
           transition={{ duration: 0.5 }}
         >
-          <Image src="/logo.svg" alt="Logo bv track" width={150} height={60} />
+          <Link href={"#top"}>
+            <Image
+              src="/logo.svg"
+              alt="Logo bv track"
+              width={150}
+              height={60}
+            />
+          </Link>
         </motion.div>
 
         <div
           className={twMerge(
-            "flex items-center text-slate-800 gap-4 lg:bg-transparent lg:flex-row lg:static lg:h-full lg:w-fit fixed right-0 top-0 min-h-0 max-h-0 lg:min-h-full bg-zinc-200/20 lg:backdrop-blur-none backdrop-blur-lg border-2 h-full lg:border-0 overflow-hidden lg:overflow-auto transition-all border-white w-full flex-col justify-center",
+            "flex items-center text-slate-800 gap-4 lg:bg-transparent lg:flex-row lg:static lg:h-full lg:w-fit fixed right-0 top-0 min-h-0 max-h-0 lg:min-h-full bg-background/40 lg:backdrop-blur-none backdrop-blur-lg border-2 h-full lg:border-0 overflow-hidden lg:overflow-auto transition-all border-white w-full flex-col justify-center",
             open && "max-h-screen min-h-screen slide-in-from-top"
           )}
         >
@@ -79,7 +86,7 @@ const Header = () => {
           ))}
         </div>
 
-        <label className="label ">
+        <label className="label lg:hidden flex">
           <input
             type="checkbox"
             onChange={() => (open ? setOpen(false) : setOpen(true))}

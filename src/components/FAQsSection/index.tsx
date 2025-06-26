@@ -23,7 +23,7 @@ const FAQsSection = () => {
       className="bg-white mb-0"
     >
       <SectionContent title="Perguntas Frequentes">
-        <div ref={viewRef} className="flex flex-col ">
+        <div ref={viewRef} className="flex flex-col gap-8">
           <Accordion
             type="single"
             collapsible
@@ -41,7 +41,7 @@ const FAQsSection = () => {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: question.id * 0.1 }}
                 >
-                  <AccordionTrigger className="text-base cursor-pointer">
+                  <AccordionTrigger className="text-base font-semibold cursor-pointer">
                     {question.question}
                   </AccordionTrigger>
                   <AccordionContent className="">

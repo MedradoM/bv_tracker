@@ -24,7 +24,7 @@ export function AnimatedBadge({ badgeContent }: TAnimatedBadge) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.4 }}
-          className="bg-gradient-to-br text-xs from-red-500 via-purple-500 to-blue-500 text-white px-4 py-1 lg:text-sm rounded-full absolute"
+          className="bg-[#A6B0F2] text-xs  text-slate-700 px-4 py-1 lg:text-sm rounded-full absolute"
         >
           {badgeContent[index]}
         </motion.div>

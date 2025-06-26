@@ -18,8 +18,8 @@ const listCounters = [
   {
     icon: Clock,
     text: "Anos de experiência",
-    value: 10,
-    prefix: "",
+    value: 5,
+    prefix: "+",
     sufix: " anos",
   },
   {
@@ -53,10 +53,10 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: -20, filter: "blur(4px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="lg:text-6xl text-4xl font-bold text-slate-800 leading-tight"
+              className="lg:text-6xl text-4xl font-bold text-blue-900 leading-tight"
             >
               Monitoramento
-              <span className="block bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="block font-normal bg-blue-900 bg-clip-text text-transparent">
                 Inteligente para sua frota
               </span>
             </motion.h1>
@@ -73,7 +73,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col lg:flex-row gap-4 mt-4 w-full">
               <Button
-                className="text-sm lg:w-fit w-full bg-blue-800 hover:bg-blue-700 cursor-pointer py-4 px-6"
+                className="text-sm lg:w-fit w-full bg-primary hover:bg-blue-700 cursor-pointer py-4 px-6"
                 type="button"
               >
                 Saiba mais
@@ -89,7 +89,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex w-full p-4 rounded-lg bg-blue-800">
+          <div className="flex w-full p-4 rounded-lg bg-primary">
             <div className=" w-full min-h-36 flex items-center justify-center">
               <Play className="size-16 stroke-white fill-white" />
             </div>

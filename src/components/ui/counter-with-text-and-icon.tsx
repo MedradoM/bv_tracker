@@ -18,7 +18,7 @@ const CounterWithTextAndIcon = ({
 }: TCWTAI) => {
   return (
     <div className="flex items-center gap-4">
-      <Icon className="size-10 stroke-blue-800"></Icon>
+      <Icon className="size-10 stroke-primary"></Icon>
 
       <div className="flex flex-col items-center">
         <Counter
@@ -27,7 +27,7 @@ const CounterWithTextAndIcon = ({
           suffix={suffix}
           prefix={prefix}
           duration={300}
-          className="text-5xl text-blue-800 font-bold"
+          className="text-5xl text-primary font-bold"
         />
         <p className="text-sm text-slate-900">{text}</p>
       </div>
