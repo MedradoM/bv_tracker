@@ -41,10 +41,10 @@ const badgeContent = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen h-full  flex items-center justify-center">
+    <section className="relative min-h-screen mt-16 h-full flex items-center justify-center">
       <HeroBackground />
 
-      <div className="lg:absolute flex flex-col gap-16 lg:mt-0 mt-[8vh]">
+      <div className="lg:absolute flex flex-col gap-16 lg:mt-0 lg:mb-0 mb-[10vh] mt-[10vh]">
         <div className=" lg:flex-row gap-8 flex-col self-center justify-self-center container px-[4vw] flex z-10">
           <div className="flex flex-col items-start lg:max-w-[50%] gap-2">
             <AnimatedBadge badgeContent={badgeContent} />

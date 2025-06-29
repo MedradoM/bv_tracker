@@ -88,11 +88,7 @@ const WhoWeAreSection = () => {
         className="h-[320vh] w-full relative"
         ref={sectionRef}
       >
-        <DefaultSectionContainer
-          className="bg-white h-[100vh] mb-0
-
-       text-black w-[98%] m-auto rounded-t-3xl justify-self-center flex self-center sticky top-0"
-        >
+        <DefaultSectionContainer className="bg-white h-[100vh] text-black w-[98%] m-auto rounded-t-3xl justify-self-center flex self-center sticky top-0">
           <SplitText
             text="Quem nós somos?"
             className="text-4xl lg:text-5xl font-bold mb-18"

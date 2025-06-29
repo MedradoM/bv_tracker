@@ -1,0 +1,86 @@
+{
+  "carousel_1": [
+    {
+      "name": "João Perez",
+      "role": "Dono de frota",
+      "message": "Atendimento excelente, empresa muito competente e confiável, total comprometimento com o cliente! Serviço de qualidade, melhor empresa de monitoramento da região!"
+    },
+    {
+      "name": "Maria da Silva",
+      "role": "Gerente de logística",
+      "message": "Ótimos profissionais, qualificados e empenhados em atender o cliente da melhor forma. Prezando honestidade humildade e companheirismo."
+    },
+    {
+      "name": "Carlos S. Souza",
+      "role": "Motorista",
+      "message": "Respondem bem rápido, sempre prontos para ajudar. Recomendo a todos que precisam de um serviço de monitoramento de qualidade."
+    },
+    {
+      "name": "Ana Costa",
+      "role": "Dona de frota",
+      "message": "Excelente empresa, sempre dispostos a ajudar e resolver qualquer problema. Atendimento nota 10!"
+    },
+    {
+      "name": "Ricardo Oliveira",
+      "role": "Gerente de logística",
+      "message": "Profissionais sérios, cumprem prazos e estão sempre atentos. Trouxeram mais controle e segurança pras entregas da empresa."
+    },
+    {
+      "name": "Rafaella M. Fernandes",
+      "role": "Motorista",
+      "message": "Fui super bem atendida. Toda dúvida que tive, explicaram com paciência. Gente muito bacana!"
+    },
+    {
+      "name": "Fernando J. P. Andrade",
+      "role": "Dono de frota",
+      "message": "Com eles eu sei que minha frota tá segura. Já tive problema com outro serviço antes, mas agora fico tranquilo."
+    },
+    {
+      "name": "Priscila Rocha",
+      "role": "Gerente de logística",
+      "message": "Organização impecável! Agilidade no atendimento e suporte quando precisamos. São parceiros de verdade."
+    }
+  ],
+  "carousel_2": [
+    {
+      "name": "Gustavo H. Martins",
+      "role": "Dono de frota",
+      "message": "Empresa top demais. Acompanham tudo em tempo real e avisam qualquer coisa. Me ajudaram até a recuperar um caminhão que foi roubado."
+    },
+    {
+      "name": "Fernanda Lima",
+      "role": "Gerente de logística",
+      "message": "Recomendo de olhos fechados. Serviço confiável e o pessoal sempre muito cordial no contato com a gente."
+    },
+    {
+      "name": "Pedro J. Nascimento",
+      "role": "Motorista",
+      "message": "Tive um problema na estrada e eles foram super rápidos pra resolver. Me senti amparado de verdade."
+    },
+    {
+      "name": "Juliana F. Almeida",
+      "role": "Dona de frota",
+      "message": "Desde que começamos com eles, nunca mais tivemos dor de cabeça com rastreamento. Atendimento sempre pronto e eficiente."
+    },
+    {
+      "name": "Matheus Mendes",
+      "role": "Gerente de logística",
+      "message": "Equipe com know-how! Resolveram coisas que outras empresas nem sabiam por onde começar. Vale cada centavo."
+    },
+    {
+      "name": "Alonso T. Dias",
+      "role": "Motorista",
+      "message": "Além de eficientes, são gente boa! Sempre tratam a gente com respeito e consideração. Isso faz diferença."
+    },
+    {
+      "name": "Sandra Regina",
+      "role": "Dona de frota",
+      "message": "Ótimo custo-benefício. Monitoramento de qualidade sem pesar no orçamento da empresa."
+    },
+    {
+      "name": "Anderson Lopes",
+      "role": "Motorista",
+      "message": "Pra quem roda o Brasil, é bom saber que tem alguém acompanhando. E eles fazem isso com excelência."
+    }
+  ]
+}

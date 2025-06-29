@@ -116,8 +116,8 @@ const ContactSection = () => {
             ))}
           </div>
 
-          <Card className="border-0 shadow-xl bg-white flex lg:justify-self-end lg:w-[80%]">
-            <CardContent className="p-8">
+          <Card className="border-0 shadow-none lg:shadow-xl bg-white flex lg:justify-self-end lg:w-[80%]">
+            <CardContent className="lg:p-8 p-0">
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   Envie uma mensagem
