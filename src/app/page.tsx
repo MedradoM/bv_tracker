@@ -3,8 +3,8 @@ import ContactSection from "@/components/contactSection";
 import FAQsSection from "@/components/FAQsSection";
 import HeroSection from "@/components/heroSection";
 import BgGradient from "@/components/ui/bg-gradient";
-import WhatsAppButton from "@/components/whatsappButton";
 import WhoWeAreSection from "@/components/whoWeAreSection";
+import WorkSection from "@/components/workSection";
 
 export default function Home() {
   return (
@@ -13,6 +13,8 @@ export default function Home() {
         <BgGradient />
         <HeroSection />
 
+        <WorkSection />
+
         <WhoWeAreSection />
 
         <BriefSection />
@@ -20,8 +22,6 @@ export default function Home() {
         <FAQsSection />
 
         <ContactSection />
-
-        <WhatsAppButton />
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import { Clock, Play, Shield, Star } from "lucide-react";
 import HeroBackground from "./heroBackground";
 import CounterWithTextAndIcon from "../ui/counter-with-text-and-icon";
+import { useRouter } from "next/navigation";
 
 const listCounters = [
   {
@@ -40,6 +41,8 @@ const badgeContent = [
 ];
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <section className="relative min-h-screen mt-16 h-full flex items-center justify-center">
       <HeroBackground />
@@ -75,16 +78,18 @@ const HeroSection = () => {
               <Button
                 className="text-sm lg:w-fit w-full bg-primary hover:bg-blue-700 cursor-pointer py-4 px-6"
                 type="button"
+                onClick={() => router.push("#contato")}
               >
-                Saiba mais
+                Entre em contato
               </Button>
 
               <Button
                 className="text-sm lg:w-fit w-full border-blue-600 text-blue-600 hover:text-blue-600 cursor-pointer py-4 px-6"
                 type="button"
                 variant={"outline"}
+                onClick={() => router.push("#nosso-trabalho")}
               >
-                Entre em contato
+                Saiba mais
               </Button>
             </div>
           </div>

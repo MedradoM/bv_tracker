@@ -52,7 +52,7 @@ const Header = () => {
           animate={{ opacity: 1, filter: "blur(0)" }}
           transition={{ duration: 0.5 }}
         >
-          <Link href={"#top"}>
+          <Link href={"/#top"}>
             <Image
               src="/logo.svg"
               alt="Logo bv track"

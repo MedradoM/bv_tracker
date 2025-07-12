@@ -5,6 +5,7 @@ import { ReactLenis } from "lenis/react";
 import Header from "@/components/header";
 import ScrollProvider from "@/context/scrollContext";
 import Footer from "@/components/footer";
+import WhatsAppButton from "@/components/whatsappButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,8 @@ export default function RootLayout({
             <>
               <Header />
               {children}
+              <WhatsAppButton />
+
               <Footer />
             </>
           </ScrollProvider>

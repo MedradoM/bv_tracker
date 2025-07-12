@@ -1,0 +1,238 @@
+{
+  "works": [
+    {
+      "id": 0,
+      "title": "Telemetria Avançada",
+      "slug": "telemetria-avancada",
+      "description": "Aumente a segurança e eficiência da sua frota com dados em tempo real.",
+      "image": "/medias/01/banner.png",
+      "data": {
+        "title_data": "Telemetria Avançada para ter todos os dados da sua frota em tempo real",
+        "title_2": "Melhore a performance com dados precisos",
+        "description_data": "Nossa telemetria avançada integra GPS de alta precisão, diagnóstico OBD-II e conectividade 4G/5G para fornecer monitoramento continuo dos veículos. Acompanhe parâmetros como localização, velocidade, consumo de combustível e alertas de falha em tempo real.",
+        "image_data": "/medias/truck.png",
+        "link_data": "/telemetria-avancada",
+        "text": [
+          {
+            "id": 0,
+            "title": "Monitoramento de frenagens, curvas e acelerações",
+            "text": "Através da telemetria veicular, é possível identificar em tempo real se o condutor está realizando frenagens intensas, curvas acentuadas ou acelerando de forma excessiva. Todas essas informações são monitoradas remotamente, registradas automaticamente e ficam disponíveis para análise, permitindo uma gestão mais eficiente e decisões rápidas e precisas.",
+            "image": "/medias/truck.png"
+          },
+          {
+            "id": 1,
+            "title": "Monitoramento da Ociosidade do Motor",
+            "text": "Acompanhe em tempo real o tempo de ociosidade do motor dos veículos da frota. Com esses dados, é possível avaliar com mais precisão a eficiência operacional, identificar desperdícios e otimizar os custos, garantindo mais desempenho e economia para suas operações.",
+            "image": "/medias/truck.png"
+          },
+          {
+            "id": 2,
+            "title": "Promoção da Condução Econômica",
+            "text": "Deseja reduzir os gastos com combustível e manutenção? A telemetria fornece dados valiosos que permitem ao gestor implementar uma cultura de condução econômica, incentivando desde práticas de direção consciente e manutenção preventiva até decisões estratégicas como a renovação da frota.",
+            "image": "/medias/truck.png"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "title": "Videotelemetria",
+      "slug": "videotelemetria",
+      "description": "Monitore sua frota com câmeras inteligentes garantindo maior segurança e evitando acidentes.",
+      "image": "/medias/02/banner.png",
+      "data": {
+        "title_data": "Uma junção de câmeras e inteligência artificial para monitoramento completo",
+        "description_data": "A videotelemetria combina câmeras HD embarcadas com IA para análise de comportamento do motorista e identificação de eventos como frenagem brusca, distrações e aproximação de obstáculos.",
+        "image_data": "/images/videotelemetria-overview.png",
+        "link_data": "/videotelemetria",
+        "title_2": "Sem mais acidentes causados por mau habitos de direção",
+        "text": [
+          {
+            "id": 0,
+            "title": "Alerta de Comportamentos de Risco",
+            "text": "Nossa inteligência artificial interpreta imagens internas e externas do veículo para emitir alertas em tempo real sobre atitudes perigosas, como distrações e condutas inadequadas ao volante.",
+            "image": "/icons/evidence.svg"
+          },
+          {
+            "id": 1,
+            "title": "Redução de Custos Operacionais",
+            "text": "Otimize o desempenho da frota com correções automáticas de condução, diminuindo o consumo de combustível e evitando manutenções desnecessárias. Mais autonomia e disponibilidade com menos despesas.",
+            "image": "/icons/economy.svg"
+          },
+          {
+            "id": 2,
+            "title": "Prevenção de Acidentes",
+            "text": "Reduza drasticamente os riscos de colisões, lesões e fatalidades com o uso da videotelemetria. Sensores e câmeras permitem um monitoramento contínuo, garantindo mais segurança nas operações.",
+            "image": "/icons/detection.svg"
+          },
+          {
+            "id": 3,
+            "title": "Análise da Condução",
+            "text": "Identifique e corrija padrões de direção arriscados como frenagens bruscas, curvas agressivas e acelerações repentinas. A videotelemetria traz visibilidade completa do comportamento dos motoristas.",
+            "image": "/icons/feedback.svg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Controle de Combustível",
+      "slug": "controle-combustivel",
+      "description": "Evite desperdício de combustível e reduza custos com o controle preciso do abastecimento.",
+      "image": "/medias/03/banner.png",
+      "data": {
+        "title_data": "Economia em até 25% com o controle de abastecimento",
+        "description_data": "Nosso sistema correlaciona leituras de nível de tanque e dados de rota para identificar desvios e fraudes no abastecimento, garantindo transparência e economia.",
+        "image_data": "/images/controle-combustivel-overview.png",
+        "link_data": "/controle-de-combustivel",
+        "title_2": "Reduzindo gastos a cada abastecimento",
+        "text": [
+          {
+            "id": 0,
+            "title": "Gestão de Posto Interno",
+            "text": "Controle de forma eficiente o abastecimento em postos internos. Monitore o uso das bombas e tenha total visibilidade sobre o consumo, evitando desperdícios e melhorando a gestão de combustível.",
+            "image": "/icons/fuel-station.svg"
+          },
+          {
+            "id": 1,
+            "title": "Histórico de Abastecimento",
+            "text": "Acompanhe a evolução do consumo de combustível da frota com base em dados históricos. Detecte padrões, identifique desvios e planeje manutenções com maior controle e economia.",
+            "image": "/icons/history.svg"
+          },
+          {
+            "id": 2,
+            "title": "Relatórios Personalizados",
+            "text": "Gere relatórios completos com os indicadores mais relevantes para sua operação. Tenha acesso rápido ao histórico de abastecimento e análise detalhada do desempenho da frota, sempre que precisar.",
+            "image": "/icons/report.svg"
+          },
+          {
+            "id": 3,
+            "title": "Análise de Autonomia Veicular",
+            "text": "Identifique variações no consumo de combustível com precisão. A análise de autonomia permite detectar mau uso, rotas ineficientes ou falhas mecânicas, otimizando o desempenho e reduzindo custos.",
+            "image": "/icons/fuel-efficiency.svg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Rastreamento Veicular",
+      "slug": "rastreamento",
+      "description": "Acompanhe em tempo real sua frota, tenha todos os dados de localização e velocidade de seus veículos.",
+      "image": "/medias/04/banner.png",
+      "data": {
+        "title_data": "Monitoramento eficiente em tempo real",
+        "description_data": "Utilizando GPS de alta sensibilidade e telemetria OBD‑II, nosso serviço oferece mapa interativo, histórico de trajetos e análise de velocidade média.",
+        "image_data": "/images/rastreamento-overview.png",
+        "link_data": "/rastreamento-veicular",
+        "title_2": "Mais controle sobre sua frota",
+        "text": [
+          {
+            "id": 0,
+            "title": "Cercas Virtuais Inteligentes",
+            "text": "Delimite zonas de operação e receba alertas sempre que um veículo entrar ou sair dessas áreas. As cercas virtuais oferecem mais controle logístico, segurança da carga e garantia no cumprimento das rotas.",
+            "image": "/icons/geofence.svg"
+          },
+          {
+            "id": 1,
+            "title": "Identificação de Motoristas",
+            "text": "Saiba exatamente quem está ao volante em cada trajeto. Com a identificação de motoristas, você obtém dados mais precisos para treinar, premiar ou corrigir condutores de forma justa e eficaz.",
+            "image": "/icons/driver-id.svg"
+          },
+          {
+            "id": 2,
+            "title": "Monitoramento de Hodômetro",
+            "text": "Acompanhe a quilometragem de cada veículo em tempo real e programe manutenções preventivas com mais precisão. Isso evita falhas inesperadas e prolonga a vida útil da frota.",
+            "image": "/icons/odometer.svg"
+          },
+          {
+            "id": 3,
+            "title": "Eficiência em Tempo Real",
+            "text": "Tenha visibilidade total sobre o trajeto e a condução dos motoristas. Detecte paradas improdutivas e desvios de rota para otimizar o tempo, reduzir o consumo de combustível e aumentar a eficiência operacional.",
+            "image": "/icons/realtime.svg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Checklists",
+      "slug": "checklists",
+      "description": "Todos os dados de manutenção e segurança dos veículos na palma da sua mão.",
+      "image": "/medias/05/banner.png",
+      "data": {
+        "title_data": "Esteja sempre um passo à frente com checklists digitais",
+        "description_data": "Preencha checklists pré‑viagem pelo celular, registrando fotos, observações e assinaturas digitais para conformidade instantânea.",
+        "image_data": "/images/checklists-overview.png",
+        "link_data": "/checklists",
+        "title_2": "Evite futuros problemas com checklists digitais",
+        "text": [
+          {
+            "id": 0,
+            "title": "Gestão de Manutenção Preventiva",
+            "text": "Mantenha as manutenções sempre em dia com controle automatizado via sistema. Acompanhe o histórico de cada veículo e reduza custos com falhas evitáveis.",
+            "image": "/icons/maintenance.svg"
+          },
+          {
+            "id": 1,
+            "title": "Controle de Documentação",
+            "text": "Evite surpresas com CNHs vencidas ou irregularidades veiculares. O checklist permite visualizar e acompanhar facilmente as pendências documentais de toda a equipe e veículos.",
+            "image": "/icons/document-check.svg"
+          },
+          {
+            "id": 2,
+            "title": "Visão Completa da Frota",
+            "text": "Tenha uma visão ampla e atualizada do estado da sua frota com o checklist. Visualize avarias, manutenções e itens de segurança diretamente pelo celular, com praticidade e agilidade.",
+            "image": "/icons/fleet-vision.svg"
+          },
+          {
+            "id": 3,
+            "title": "Segurança Operacional",
+            "text": "Acompanhe de perto as condições dos veículos e a conduta dos motoristas antes de cada operação. O checklist digital garante mais segurança e controle no dia a dia da sua frota.",
+            "image": "/icons/safety.svg"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Gestão de Manutenção",
+      "slug": "gestao-de-manutencao",
+      "description": "Crie planos de manutenção e aumente a vida útil dos seus veículos.",
+      "image": "/medias/06/banner.png",
+      "data": {
+        "title_data": "Planejamento e Controle",
+        "description_data": "Nosso módulo de manutenção gera ordens de serviço automáticas com base em horas de uso, quilometragem e falhas detectadas via telemetria.",
+        "image_data": "/images/manutencao-overview.png",
+        "link_data": "/gestao-de-manutencao",
+        "title_2": "Aumente a segurança e vida útil da frota",
+        "text": [
+          {
+            "id": 16,
+            "title": "Histórico de Manutenção",
+            "text": "Acompanhe com facilidade quando e como foram feitas as manutenções da frota. Com acesso ao histórico completo, é possível identificar padrões de falhas, peças problemáticas e frequência de reparos por veículo.",
+            "image": "/icons/maintenance-history.svg"
+          },
+          {
+            "id": 17,
+            "title": "Custos Não Planejados",
+            "text": "Tenha visibilidade sobre gastos inesperados com manutenção e entenda o impacto deles na operação logística. Com esses dados, é possível se antecipar e minimizar prejuízos futuros.",
+            "image": "/icons/unexpected-costs.svg"
+          },
+          {
+            "id": 18,
+            "title": "Planejamento de Revisões",
+            "text": "Programe revisões com base na média de uso e tempo de inatividade de cada veículo. A manutenção preventiva evita surpresas, reduz falhas mecânicas e garante continuidade nas operações.",
+            "image": "/icons/preventive-maintenance.svg"
+          },
+          {
+            "id": 19,
+            "title": "Veículos com Maior Custo",
+            "text": "Identifique quais veículos geram mais despesas e têm o pior custo-benefício na frota. Com essa análise, é possível tomar decisões mais estratégicas sobre substituições e investimentos.",
+            "image": "/icons/high-cost-vehicles.svg"
+          }
+        ]
+      }
+    }
+  ]
+}

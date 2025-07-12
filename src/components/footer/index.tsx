@@ -4,8 +4,11 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { SplitText } from "../ui/split-text";
 import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
+
   return (
     <footer className="py-16 bg-slate-800 text-slate-50">
       <div className="container gap-8 mx-auto px-4 flex flex-col">
@@ -23,6 +26,7 @@ const Footer = () => {
             </motion.div>
 
             <Button
+              onClick={() => router.push("https://wa.me/5517991364360")}
               className="text-sm z-10 transition-all lg:w-fit w-full border-slate-800 text-slate-800 hover:text-slate-50 hover:bg-blue-600 cursor-pointer py-4 px-6"
               type="button"
               variant={"outline"}

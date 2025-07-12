@@ -20,7 +20,7 @@ const contact = [
     content: [
       {
         text: "(17) 99136-4360",
-        href: "wa.me/5517991364360",
+        href: "https://wa.me/5517991364360",
       },
     ],
   },
