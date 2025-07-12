@@ -44,7 +44,7 @@ const HeroSection = () => {
   const router = useRouter();
 
   return (
-    <section className="relative min-h-screen mt-16 h-full flex items-center justify-center">
+    <section className="relative min-h-screen mt-8 h-full flex items-center justify-center">
       <HeroBackground />
 
       <div className="lg:absolute flex flex-col gap-16 lg:mt-0 lg:mb-0 mb-[10vh] mt-[10vh]">

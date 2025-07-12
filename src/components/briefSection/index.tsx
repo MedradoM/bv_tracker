@@ -42,11 +42,11 @@ const BriefSection = () => {
     <section
       id="depoimentos"
       ref={ref}
-      className="flex flex-col gap-16 my-32 scroll-mt-36"
+      className="flex flex-col gap-16 px-4 my-32 scroll-mt-36"
     >
       <div className="flex flex-col items-center lg:gap-2 gap-4 lg:max-w-3xl mx-auto">
         <SplitText
-          className="lg:text-5xl text-3xl text-center w-full items-center justify-center"
+          className="lg:text-5xl text-2xl text-center w-full items-center justify-center"
           text="O que nossos clientes dizem sobre nossos serviços"
         />
 
@@ -87,7 +87,7 @@ const BriefSection = () => {
                   key={`carousel_2_${index}`}
                   className="lg:basis-1/4 basis-full md:basis-1/2"
                 >
-                  <div className="flex h-[20vh] flex-col justify-between p-4 rounded-xl bg-white shadow">
+                  <div className="flex min-h-[21vh] h-full flex-col justify-between p-4 rounded-xl bg-white shadow">
                     <Quote className="stroke-primary/20 lg:size-6 size-4 fill-primary/20 rotate-180" />
 
                     <p className="lg:text-base text-sm italic font-semibold">

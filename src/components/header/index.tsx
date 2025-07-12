@@ -64,8 +64,9 @@ const Header = () => {
 
         <div
           className={twMerge(
-            "flex items-center text-slate-800 gap-4 lg:bg-transparent lg:flex-row lg:static lg:h-full lg:w-fit fixed right-0 top-0 min-h-0 max-h-0 lg:min-h-full bg-background/40 lg:backdrop-blur-none backdrop-blur-lg border-2 h-full lg:border-0 overflow-hidden lg:overflow-auto transition-all border-white w-full flex-col justify-center",
-            open && "max-h-screen min-h-screen slide-in-from-top"
+            "flex items-center text-slate-800 gap-4 lg:bg-transparent lg:flex-row lg:static lg:h-full lg:w-fit fixed right-0 top-0 min-h-0 max-h-0 lg:min-h-full bg-background/50 lg:backdrop-blur-none !backdrop-blur-lg h-full lg:border-0 overflow-hidden lg:overflow-auto transition-all border-white w-full flex-col justify-center",
+            open &&
+              "max-h-screen min-h-screen z-[99] border-2 slide-in-from-top"
           )}
         >
           {navigation.map((item, index) => (
