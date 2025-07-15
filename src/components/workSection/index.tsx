@@ -10,6 +10,9 @@ import data from "./data.json";
 import Link from "next/link";
 import { unstable_ViewTransition as ViewTransition } from "react";
 import Image from "next/image";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import { Button } from "../ui/button";
+import Autoplay from "embla-carousel-autoplay";
 
 const WorkSection = () => {
   const ref = useRef(null);
@@ -123,6 +126,56 @@ const WorkSection = () => {
                 })}
               </div>
             ))}
+          </div>
+
+          <div className="lg:hidden relative">
+            <Carousel
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                  active: true,
+                  stopOnInteraction: false,
+                  stopOnFocusIn: false,
+                }),
+              ]}
+            >
+              <CarouselContent>
+                {data.works.map((item) => (
+                  <CarouselItem
+                    key={item.id}
+                    className="basis-[80%] min-h-[38vh]"
+                  >
+                    <Link
+                      href={`/servico/${item.slug}`}
+                      className="size-full flex flex-col justify-between h-full"
+                    >
+                      <div className="flex flex-col gap-2">
+                        <ViewTransition name={`mobile-${item.slug}`}>
+                          <Image
+                            alt={item.slug}
+                            src={item.image}
+                            height={200}
+                            width={500}
+                            className="object-cover rounded-lg mb-2"
+                          />
+                        </ViewTransition>
+
+                        <div className="flex flex-col gap-2">
+                          <h3 className="text-lg font-semibold">
+                            {item.title}
+                          </h3>
+                          <p className="text-sm text-gray-500">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+
+                      <Button type="button">Saiba mais</Button>
+                    </Link>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </Carousel>
           </div>
         </SectionContent>
       </DefaultSectionContainer>

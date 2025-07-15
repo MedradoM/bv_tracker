@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 import { Separator } from "../ui/separator";
 import { useRouter } from "next/navigation";
 import DataBlock from "../ui/data-block";
-import { unstable_ViewTransition as ViewTransition } from "react";
+import { memo, unstable_ViewTransition as ViewTransition } from "react";
 
 type ContentProps = {
   data: TServiceData;
@@ -47,15 +47,28 @@ const Content = ({ data }: ContentProps) => {
         </div>
 
         <div className="lg:col-span-7 col-span-1 row-start-1 lg:row-start-auto">
-          <ViewTransition name={`data-${data.slug}`}>
-            <Image
-              src={data.image}
-              alt="Imagem do serviço"
-              height={450}
-              width={1000}
-              className="rounded-lg"
-            />
-          </ViewTransition>
+          <div className="hidden lg:flex">
+            <ViewTransition name={`data-${data.slug}`}>
+              <Image
+                src={data.image}
+                alt="Imagem do serviço"
+                height={450}
+                width={1000}
+                className="rounded-lg"
+              />
+            </ViewTransition>
+          </div>
+          <div className="lg:hidden flex ">
+            <ViewTransition name={`mobile-${data.slug}`}>
+              <Image
+                src={data.image}
+                alt="Imagem do serviço"
+                height={450}
+                width={1000}
+                className="rounded-lg"
+              />
+            </ViewTransition>
+          </div>
         </div>
       </div>
       <Separator />
@@ -86,4 +99,4 @@ const Content = ({ data }: ContentProps) => {
   );
 };
 
-export default Content;
+export default memo(Content);

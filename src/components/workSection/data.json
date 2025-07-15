@@ -17,19 +17,19 @@
             "id": 0,
             "title": "Monitoramento de frenagens, curvas e acelerações",
             "text": "Através da telemetria veicular, é possível identificar em tempo real se o condutor está realizando frenagens intensas, curvas acentuadas ou acelerando de forma excessiva. Todas essas informações são monitoradas remotamente, registradas automaticamente e ficam disponíveis para análise, permitindo uma gestão mais eficiente e decisões rápidas e precisas.",
-            "image": "/medias/truck.png"
+            "image": "/medias/01/01.png"
           },
           {
             "id": 1,
             "title": "Monitoramento da Ociosidade do Motor",
             "text": "Acompanhe em tempo real o tempo de ociosidade do motor dos veículos da frota. Com esses dados, é possível avaliar com mais precisão a eficiência operacional, identificar desperdícios e otimizar os custos, garantindo mais desempenho e economia para suas operações.",
-            "image": "/medias/truck.png"
+            "image": "/medias/01/02.png"
           },
           {
             "id": 2,
             "title": "Promoção da Condução Econômica",
             "text": "Deseja reduzir os gastos com combustível e manutenção? A telemetria fornece dados valiosos que permitem ao gestor implementar uma cultura de condução econômica, incentivando desde práticas de direção consciente e manutenção preventiva até decisões estratégicas como a renovação da frota.",
-            "image": "/medias/truck.png"
+            "image": "/medias/01/03.png"
           }
         ]
       }

@@ -29,7 +29,7 @@ const contact = [
     Icon: MapPin,
     content: [
       {
-        text: "Av. José Zancaner, 1073-1015, Catiguá - SP, 15870-000",
+        text: "Av. José Zancaner, 40, Catiguá - SP, 15870-000",
         href: "https://maps.app.goo.gl/re8M7bpbVTUYNg6w7",
       },
     ],
@@ -39,8 +39,8 @@ const contact = [
     Icon: Mail,
     content: [
       {
-        text: "atendimento@bvtracker.com.br",
-        href: "mailto:atendimento@bvtracker.com.br",
+        text: "rastreamentobvtracker@gmail.com",
+        href: "mailto:rastreamentobvtracker@gmail.com",
       },
     ],
   },
@@ -65,14 +65,14 @@ type TForm = {
 };
 
 const ContactSection = () => {
-  const { register, handleSubmit } = useForm<TForm>();
+  const { register } = useForm<TForm>();
   const registerWithMask = useHookFormMask(register);
   const ref = useRef(null);
   const animatePresence = useInView(ref, { once: true });
 
-  const submitForm = (data: TForm) => {
-    console.log("Form submitted:", data);
-  };
+  // const submitForm = (data: TForm) => {
+  //   console.log("Form submitted:", data);
+  // };
 
   return (
     <DefaultSectionContainer id="contato" className="bg-white my-0">
@@ -128,7 +128,12 @@ const ContactSection = () => {
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit(submitForm)} className="space-y-6">
+              <form
+                action={"https://formspree.io/f/xrgwdjka"}
+                method="POST"
+                // onSubmit={handleSubmit(submitForm)}
+                className="space-y-6"
+              >
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label
