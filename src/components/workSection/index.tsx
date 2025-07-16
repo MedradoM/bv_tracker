@@ -108,7 +108,6 @@ const WorkSection = () => {
                         </ViewTransition>
 
                         <motion.div
-                          layout
                           className={twMerge(
                             "absolute inset-0 transition-all rounded-lg",
                             isSameRow

@@ -51,25 +51,25 @@
             "id": 0,
             "title": "Alerta de Comportamentos de Risco",
             "text": "Nossa inteligência artificial interpreta imagens internas e externas do veículo para emitir alertas em tempo real sobre atitudes perigosas, como distrações e condutas inadequadas ao volante.",
-            "image": "/icons/evidence.svg"
+            "image": "/medias/02/01.png"
           },
           {
             "id": 1,
             "title": "Redução de Custos Operacionais",
             "text": "Otimize o desempenho da frota com correções automáticas de condução, diminuindo o consumo de combustível e evitando manutenções desnecessárias. Mais autonomia e disponibilidade com menos despesas.",
-            "image": "/icons/economy.svg"
+            "image": "/medias/02/02.png"
           },
           {
             "id": 2,
             "title": "Prevenção de Acidentes",
             "text": "Reduza drasticamente os riscos de colisões, lesões e fatalidades com o uso da videotelemetria. Sensores e câmeras permitem um monitoramento contínuo, garantindo mais segurança nas operações.",
-            "image": "/icons/detection.svg"
+            "image": "/medias/02/03.png"
           },
           {
             "id": 3,
             "title": "Análise da Condução",
             "text": "Identifique e corrija padrões de direção arriscados como frenagens bruscas, curvas agressivas e acelerações repentinas. A videotelemetria traz visibilidade completa do comportamento dos motoristas.",
-            "image": "/icons/feedback.svg"
+            "image": "/medias/02/04.png"
           }
         ]
       }
@@ -91,25 +91,25 @@
             "id": 0,
             "title": "Gestão de Posto Interno",
             "text": "Controle de forma eficiente o abastecimento em postos internos. Monitore o uso das bombas e tenha total visibilidade sobre o consumo, evitando desperdícios e melhorando a gestão de combustível.",
-            "image": "/icons/fuel-station.svg"
+            "image": "/medias/03/01.png"
           },
           {
             "id": 1,
             "title": "Histórico de Abastecimento",
             "text": "Acompanhe a evolução do consumo de combustível da frota com base em dados históricos. Detecte padrões, identifique desvios e planeje manutenções com maior controle e economia.",
-            "image": "/icons/history.svg"
+            "image": "/medias/03/02.png"
           },
           {
             "id": 2,
             "title": "Relatórios Personalizados",
             "text": "Gere relatórios completos com os indicadores mais relevantes para sua operação. Tenha acesso rápido ao histórico de abastecimento e análise detalhada do desempenho da frota, sempre que precisar.",
-            "image": "/icons/report.svg"
+            "image": "/medias/03/03.png"
           },
           {
             "id": 3,
             "title": "Análise de Autonomia Veicular",
             "text": "Identifique variações no consumo de combustível com precisão. A análise de autonomia permite detectar mau uso, rotas ineficientes ou falhas mecânicas, otimizando o desempenho e reduzindo custos.",
-            "image": "/icons/fuel-efficiency.svg"
+            "image": "/medias/03/04.png"
           }
         ]
       }
@@ -131,25 +131,19 @@
             "id": 0,
             "title": "Cercas Virtuais Inteligentes",
             "text": "Delimite zonas de operação e receba alertas sempre que um veículo entrar ou sair dessas áreas. As cercas virtuais oferecem mais controle logístico, segurança da carga e garantia no cumprimento das rotas.",
-            "image": "/icons/geofence.svg"
+            "image": "/medias/04/01.png"
           },
           {
             "id": 1,
-            "title": "Identificação de Motoristas",
-            "text": "Saiba exatamente quem está ao volante em cada trajeto. Com a identificação de motoristas, você obtém dados mais precisos para treinar, premiar ou corrigir condutores de forma justa e eficaz.",
-            "image": "/icons/driver-id.svg"
+            "title": "Monitoramento de Hodômetro",
+            "text": "Acompanhe a quilometragem de cada veículo em tempo real e programe manutenções preventivas com mais precisão. Isso evita falhas inesperadas e prolonga a vida útil da frota.",
+            "image": "/medias/04/02.png"
           },
           {
             "id": 2,
-            "title": "Monitoramento de Hodômetro",
-            "text": "Acompanhe a quilometragem de cada veículo em tempo real e programe manutenções preventivas com mais precisão. Isso evita falhas inesperadas e prolonga a vida útil da frota.",
-            "image": "/icons/odometer.svg"
-          },
-          {
-            "id": 3,
             "title": "Eficiência em Tempo Real",
             "text": "Tenha visibilidade total sobre o trajeto e a condução dos motoristas. Detecte paradas improdutivas e desvios de rota para otimizar o tempo, reduzir o consumo de combustível e aumentar a eficiência operacional.",
-            "image": "/icons/realtime.svg"
+            "image": "/medias/04/03.png"
           }
         ]
       }
@@ -171,25 +165,25 @@
             "id": 0,
             "title": "Gestão de Manutenção Preventiva",
             "text": "Mantenha as manutenções sempre em dia com controle automatizado via sistema. Acompanhe o histórico de cada veículo e reduza custos com falhas evitáveis.",
-            "image": "/icons/maintenance.svg"
+            "image": "/medias/04/01.png"
           },
           {
             "id": 1,
             "title": "Controle de Documentação",
             "text": "Evite surpresas com CNHs vencidas ou irregularidades veiculares. O checklist permite visualizar e acompanhar facilmente as pendências documentais de toda a equipe e veículos.",
-            "image": "/icons/document-check.svg"
+            "image": "/medias/04/02.png"
           },
           {
             "id": 2,
             "title": "Visão Completa da Frota",
             "text": "Tenha uma visão ampla e atualizada do estado da sua frota com o checklist. Visualize avarias, manutenções e itens de segurança diretamente pelo celular, com praticidade e agilidade.",
-            "image": "/icons/fleet-vision.svg"
+            "image": "/medias/04/03.png"
           },
           {
             "id": 3,
             "title": "Segurança Operacional",
             "text": "Acompanhe de perto as condições dos veículos e a conduta dos motoristas antes de cada operação. O checklist digital garante mais segurança e controle no dia a dia da sua frota.",
-            "image": "/icons/safety.svg"
+            "image": "/medias/04/04.png"
           }
         ]
       }
@@ -211,25 +205,25 @@
             "id": 16,
             "title": "Histórico de Manutenção",
             "text": "Acompanhe com facilidade quando e como foram feitas as manutenções da frota. Com acesso ao histórico completo, é possível identificar padrões de falhas, peças problemáticas e frequência de reparos por veículo.",
-            "image": "/icons/maintenance-history.svg"
+            "image": "/medias/06/01.png"
           },
           {
             "id": 17,
             "title": "Custos Não Planejados",
             "text": "Tenha visibilidade sobre gastos inesperados com manutenção e entenda o impacto deles na operação logística. Com esses dados, é possível se antecipar e minimizar prejuízos futuros.",
-            "image": "/icons/unexpected-costs.svg"
+            "image": "/medias/06/02.png"
           },
           {
             "id": 18,
             "title": "Planejamento de Revisões",
             "text": "Programe revisões com base na média de uso e tempo de inatividade de cada veículo. A manutenção preventiva evita surpresas, reduz falhas mecânicas e garante continuidade nas operações.",
-            "image": "/icons/preventive-maintenance.svg"
+            "image": "/medias/06/03.png"
           },
           {
             "id": 19,
             "title": "Veículos com Maior Custo",
             "text": "Identifique quais veículos geram mais despesas e têm o pior custo-benefício na frota. Com essa análise, é possível tomar decisões mais estratégicas sobre substituições e investimentos.",
-            "image": "/icons/high-cost-vehicles.svg"
+            "image": "/medias/06/04.png"
           }
         ]
       }
