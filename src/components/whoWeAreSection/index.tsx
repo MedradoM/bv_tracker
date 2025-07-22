@@ -5,6 +5,7 @@ import DefaultSectionContainer from "../ui/default-section-container";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { SplitText } from "../ui/split-text";
 import { Quote } from "lucide-react";
+import Image from "next/image";
 
 const WhoWeAreSection = () => {
   const firstStaticRef = useRef<HTMLDivElement | null>(null);
@@ -182,10 +183,16 @@ const WhoWeAreSection = () => {
               necessidades dos nossos clientes.
             </motion.div>
           </div>
-          <div className="col-span-1">
-            <div className="h-[50vh] text-sm border flex items-center justify-center rounded-xl">
+          <div className="col-span-1 h-[25vh] lg:h-[40vh] w-full relative">
+            {/* <div className="h-[50vh] text-sm border flex items-center justify-center rounded-xl">
               imagem
-            </div>
+            </div> */}
+            <Image
+              fill
+              src={"/wwa1.png"}
+              alt="Mapa do Brasil tecnológico com vário pontos interligados"
+              className="rounded-lg object-cover"
+            />
           </div>
         </div>
 
@@ -193,10 +200,16 @@ const WhoWeAreSection = () => {
           ref={secondStaticRef}
           className="grid gap-8 grid-cols-1 lg:items-center lg:grid-cols-2"
         >
-          <div className="col-span-1">
-            <div className="h-[50vh] text-sm border flex items-center justify-center rounded-xl">
+          <div className="col-span-1 h-[25vh] lg:h-[40vh] w-full relative">
+            {/* <div className="h-[50vh] text-sm border flex items-center justify-center rounded-xl">
               imagem
-            </div>
+            </div> */}
+            <Image
+              fill
+              src={"/wwa2.png"}
+              alt="Mapa do Brasil tecnológico com vário pontos interligados"
+              className="rounded-lg object-cover"
+            />
           </div>
           <div className="col-span-1 flex flex-col gap-2">
             <SplitText text="Nossa história" className="lg:text-5xl text-3xl" />

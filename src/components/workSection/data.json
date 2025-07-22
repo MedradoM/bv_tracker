@@ -165,25 +165,25 @@
             "id": 0,
             "title": "Gestão de Manutenção Preventiva",
             "text": "Mantenha as manutenções sempre em dia com controle automatizado via sistema. Acompanhe o histórico de cada veículo e reduza custos com falhas evitáveis.",
-            "image": "/medias/04/01.png"
+            "image": "/medias/06/03.png"
           },
           {
             "id": 1,
             "title": "Controle de Documentação",
             "text": "Evite surpresas com CNHs vencidas ou irregularidades veiculares. O checklist permite visualizar e acompanhar facilmente as pendências documentais de toda a equipe e veículos.",
-            "image": "/medias/04/02.png"
+            "image": "/medias/05/02.png"
           },
           {
             "id": 2,
             "title": "Visão Completa da Frota",
             "text": "Tenha uma visão ampla e atualizada do estado da sua frota com o checklist. Visualize avarias, manutenções e itens de segurança diretamente pelo celular, com praticidade e agilidade.",
-            "image": "/medias/04/03.png"
+            "image": "/medias/05/03.png"
           },
           {
             "id": 3,
             "title": "Segurança Operacional",
             "text": "Acompanhe de perto as condições dos veículos e a conduta dos motoristas antes de cada operação. O checklist digital garante mais segurança e controle no dia a dia da sua frota.",
-            "image": "/medias/04/04.png"
+            "image": "/medias/05/04.png"
           }
         ]
       }
