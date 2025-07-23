@@ -26,6 +26,8 @@ const ScrollProvider: React.FC<{ children?: ReactNode }> = ({ children }) => {
       setIsScrolled(window.scrollY > 0);
     };
 
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -36,6 +38,8 @@ const ScrollProvider: React.FC<{ children?: ReactNode }> = ({ children }) => {
     const handleScroll = () => {
       setScroll(window.scrollY);
     };
+
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

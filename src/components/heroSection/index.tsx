@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import { AnimatedBadge } from "../ui/animated-badge";
 import { Button } from "../ui/button";
-import { Clock, Play, Shield, Star } from "lucide-react";
+import { Clock, Shield, Star } from "lucide-react";
 import HeroBackground from "./heroBackground";
 import CounterWithTextAndIcon from "../ui/counter-with-text-and-icon";
 import { useRouter } from "next/navigation";
@@ -44,11 +44,11 @@ const HeroSection = () => {
   const router = useRouter();
 
   return (
-    <section className="relative min-h-screen mt-8 h-full flex items-center justify-center">
+    <section className="relative min-h-screen mt-8 lg:mt-16 h-full flex items-center justify-center">
       <HeroBackground />
 
       <div className="lg:absolute flex flex-col gap-16 lg:mt-0 lg:mb-0 mb-[10vh] mt-[10vh]">
-        <div className=" lg:flex-row gap-8 flex-col self-center justify-self-center container px-[4vw] flex z-10">
+        <div className=" lg:flex-row gap-8 flex-col self-center items-center justify-self-center container px-[4vw] flex z-10">
           <div className="flex flex-col items-start lg:max-w-[50%] gap-2">
             <AnimatedBadge badgeContent={badgeContent} />
 
@@ -94,10 +94,23 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex w-full p-4 rounded-lg bg-primary">
-            <div className=" w-full min-h-36 flex items-center justify-center">
+          <div className="flex w-full lg:p-4 h-fit">
+            {/* <div className=" w-full min-h-36 flex items-center justify-center">
               <Play className="size-16 stroke-white fill-white" />
-            </div>
+            </div> */}
+
+            <video
+              width="100%"
+              height="fit"
+              className="rounded-lg"
+              loop
+              muted
+              playsInline
+              controls={false}
+              autoPlay
+            >
+              <source src="/video.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
 
