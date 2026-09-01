@@ -8,7 +8,8 @@ import { motion } from "motion/react";
 import { Separator } from "../ui/separator";
 import { useRouter } from "next/navigation";
 import DataBlock from "../ui/data-block";
-import { memo, unstable_ViewTransition as ViewTransition } from "react";
+import React, { memo } from "react";
+const ViewTransition = (React as any).unstable_ViewTransition || (({ children }: { name?: string; children: React.ReactNode }) => <>{children}</>);
 
 type ContentProps = {
   data: TServiceData;

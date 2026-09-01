@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import DefaultSectionContainer from "../ui/default-section-container";
 import SectionContent from "../ui/section-content";
 import { SplitText } from "../ui/split-text";
@@ -8,11 +8,12 @@ import { useInView, motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import data from "./data.json";
 import Link from "next/link";
-import { unstable_ViewTransition as ViewTransition } from "react";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import { Button } from "../ui/button";
 import Autoplay from "embla-carousel-autoplay";
+
+const ViewTransition = (React as any).unstable_ViewTransition || (({ children }: { name?: string; children: React.ReactNode }) => <>{children}</>);
 
 const WorkSection = () => {
   const ref = useRef(null);
