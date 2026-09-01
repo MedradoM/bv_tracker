@@ -7,6 +7,7 @@ import { Clock, Shield, Star } from "lucide-react";
 import HeroBackground from "./heroBackground";
 import CounterWithTextAndIcon from "../ui/counter-with-text-and-icon";
 import { useRouter } from "next/navigation";
+import { differenceInYears } from "date-fns";
 
 const listCounters = [
   {
@@ -19,7 +20,7 @@ const listCounters = [
   {
     icon: Clock,
     text: "Anos de experiência",
-    value: 5,
+    value: differenceInYears(new Date(), new Date(2019, 1, 1)),
     prefix: "+",
     sufix: " anos",
   },
