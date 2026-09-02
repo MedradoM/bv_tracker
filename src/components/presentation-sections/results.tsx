@@ -11,7 +11,7 @@ const resultsData = [
     icon: Database,
     title: "O que é o BV Tracker?",
     description:
-      "A solução de Business Intelligence da Systemsat que transforma os dados brutos da operação de rastreamento dos seus clientes em informações visuais e organizadas. Através de dashboards prontos e personalizáveis, ele conecta dados de veículos, telemetria, eventos e comportamento da frota em um único ambiente inteligente.",
+      "A solução de Business Intelligence da BV Tracker que transforma os dados brutos da operação de rastreamento dos seus clientes em informações visuais e organizadas. Através de dashboards prontos e personalizáveis, ele conecta dados de veículos, telemetria, eventos e comportamento da frota em um único ambiente inteligente.",
     cardBg: "bg-background",
     iconBg: "bg-primary/20",
     iconColor: "text-primary",

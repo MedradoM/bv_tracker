@@ -1,6 +1,7 @@
 import HeroSection from "@/components/heroSection";
 import ChatIASection from "@/components/presentation-sections/chat-ia-section";
 import DashboardsSection from "@/components/presentation-sections/dashboards";
+import PartnersSection from "@/components/presentation-sections/partners";
 import ResultsSection from "@/components/presentation-sections/results";
 import BgGradient from "@/components/ui/bg-gradient";
 
@@ -14,7 +15,7 @@ const PresentationPage = () => {
         <ResultsSection />
         <DashboardsSection />
         <ChatIASection />
-        {/* <PartnersSection /> */}
+        <PartnersSection />
       </div>
     </div>
     )

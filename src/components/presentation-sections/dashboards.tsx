@@ -18,6 +18,7 @@ import DefaultSectionContainer from "../ui/default-section-container";
 import SectionContent from "../ui/section-content";
 import { SplitText } from "../ui/split-text";
 import { useRef } from "react";
+import Image from "next/image";
 
 const dashboardCards = [
   {
@@ -123,18 +124,15 @@ const DashboardsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="w-full relative min-h-[350px] lg:min-h-[480px] rounded-3xl bg-slate-50 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center p-8 text-center overflow-hidden shadow-inner group hover:border-primary/50 transition-colors"
+          className="w-full relative min-h-[260px] lg:min-h-[680px] rounded-3xl bg-slate-50 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center p-8 text-center overflow-hidden shadow-inner group hover:border-primary/50 transition-colors"
         >
-          <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-            <ImageIcon className="w-8 h-8" />
-          </div>
-          <h3 className="text-lg font-semibold text-slate-800 mb-1">
-            Imagem do Dashboard
-          </h3>
-          <p className="text-sm text-slate-400 max-w-md">
-            Espaço reservado para a imagem ou demonstração interativa do
-            dashboard (será anexada posteriormente).
-          </p>
+          <Image 
+            src="/presentation/dashboard.jpeg"
+            fill
+            className="object-cover"
+            alt="Dashboards inteligentes para a sua frota"
+            quality={100}
+          />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch mt-4">
