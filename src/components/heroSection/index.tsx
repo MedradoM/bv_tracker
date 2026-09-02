@@ -8,8 +8,9 @@ import HeroBackground from "./heroBackground";
 import CounterWithTextAndIcon from "../ui/counter-with-text-and-icon";
 import { useRouter } from "next/navigation";
 import { differenceInYears } from "date-fns";
+import { cn } from "@/lib/utils";
 
-const listCounters = [
+export const listCounters = [
   {
     icon: Star,
     text: "Clientes satisfeitos",
@@ -41,7 +42,7 @@ const badgeContent = [
   "Confiabilidade",
 ];
 
-const HeroSection = () => {
+const HeroSection = ({ hideCounters = false}: { hideCounters?: boolean }) => {
   const router = useRouter();
 
   return (
@@ -118,7 +119,7 @@ const HeroSection = () => {
         <div className="flex flex-col w-full px-[4vw]">
           <div className="w-full border border-slate h-0" />
 
-          <div className="flex lg:flex-row flex-col gap-8 lg:gap-0 w-full justify-around items-center">
+          <div className={cn("lg:flex-row flex-col gap-8 lg:gap-0 w-full justify-around items-center", hideCounters ? "hidden" : "flex")}>
             {listCounters.map((counter, index) => (
               <CounterWithTextAndIcon
                 key={index}

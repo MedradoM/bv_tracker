@@ -11,7 +11,7 @@ const PresentationPage = () => {
 <div id="top" className="flex flex-col h-full gap-32">
       <div className="flex flex-col h-full relative">
         <BgGradient />
-        <HeroSection />
+        <HeroSection hideCounters />
         <ResultsSection />
         <DashboardsSection />
         <ChatIASection />

@@ -6,7 +6,8 @@ import { motion, useInView } from "motion/react";
 import DefaultSectionContainer from "../ui/default-section-container";
 import SectionContent from "../ui/section-content";
 import { SplitText } from "../ui/split-text";
-import { Building2, ShieldCheck, Sparkles } from "lucide-react";
+import CounterWithTextAndIcon from "../ui/counter-with-text-and-icon";
+import { listCounters } from "../heroSection";
 
 const partners = Array.from({ length: 28 }, (_, index) => {
   const id = String(index + 1).padStart(2, "0");
@@ -17,24 +18,6 @@ const partners = Array.from({ length: 28 }, (_, index) => {
   };
 });
 
-const stats = [
-  {
-    icon: Building2,
-    value: "28+",
-    label: "Empresas Parceiras",
-  },
-  {
-    icon: ShieldCheck,
-    value: "100%",
-    label: "Frotas Monitoradas",
-  },
-  {
-    icon: Sparkles,
-    value: "24/7",
-    label: "Suporte & Inteligência",
-  },
-];
-
 const PartnersSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -42,9 +25,33 @@ const PartnersSection = () => {
   return (
     <DefaultSectionContainer
       id="parceiros"
-      className="bg-white justify-self-center my-0 py-16 lg:py-32 shadow-sm"
+      className="bg-white justify-self-center my-0 py-16 lg:py-24 shadow-sm"
     >
       <SectionContent>
+
+                <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex flex-col w-full mt-8"
+        >
+          
+
+          <div className="flex lg:flex-row flex-col gap-8 lg:gap-0 w-full justify-around items-center">
+            {listCounters.map((counter, index) => (
+              <CounterWithTextAndIcon
+                key={index}
+                icon={counter.icon}
+                text={counter.text}
+                value={counter.value}
+                prefix={counter.prefix}
+                suffix={counter.sufix}
+              />
+            ))}
+          </div>
+        </motion.div>
+
         <div
           ref={ref}
           className="flex flex-col items-center gap-3 lg:max-w-3xl mx-auto text-center"
@@ -65,6 +72,7 @@ const PartnersSection = () => {
           </motion.div>
         </div>
 
+        {/* Partners Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 lg:gap-5 mt-4">
           {partners.map((partner, index) => (
             <motion.div
@@ -85,14 +93,14 @@ const PartnersSection = () => {
                   alt={partner.name}
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 14vw"
-                  className="object-contain p-2 filter lg:grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+                  className="object-contain p-2 filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
                 />
               </div>
             </motion.div>
           ))}
         </div>
 
-        
+
       </SectionContent>
     </DefaultSectionContainer>
   );
