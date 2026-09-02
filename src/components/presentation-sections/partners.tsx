@@ -45,7 +45,6 @@ const PartnersSection = () => {
       className="bg-white justify-self-center my-0 py-16 lg:py-32 shadow-sm"
     >
       <SectionContent>
-        {/* Header */}
         <div
           ref={ref}
           className="flex flex-col items-center gap-3 lg:max-w-3xl mx-auto text-center"
@@ -66,7 +65,6 @@ const PartnersSection = () => {
           </motion.div>
         </div>
 
-        {/* Partners Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 lg:gap-5 mt-4">
           {partners.map((partner, index) => (
             <motion.div
