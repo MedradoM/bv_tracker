@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "../ui/button";
 import { SplitText } from "../ui/split-text";
 import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
+import { ShieldCheck } from "lucide-react";
 
 const Footer = () => {
   const router = useRouter();
@@ -19,20 +21,32 @@ const Footer = () => {
               text="Tenha ainda mais segurança e controle sobre sua frota, conte com a BV Tracker!"
             />
 
-            <motion.div className="lg:text-base text-sm">
+            <motion.div className="lg:text-base text-sm text-slate-300">
               Se você busca economia, segurança, e tecnologia, a BV Tracker está
               disposta para te fornecer o melhor. Fale conosco agora mesmo pelo
               WhatsApp
             </motion.div>
 
-            <Button
-              onClick={() => router.push("https://wa.me/5517991364360")}
-              className="text-sm z-10 transition-all lg:w-fit w-full border-slate-800 text-slate-800 hover:text-slate-50 hover:bg-blue-600 cursor-pointer py-4 px-6"
-              type="button"
-              variant={"outline"}
-            >
-              Entre em contato
-            </Button>
+            <div className="flex flex-wrap items-center gap-3">
+              <Button
+                onClick={() => router.push("https://wa.me/5517991364360")}
+                className="text-sm z-10 transition-all lg:w-fit w-full border-slate-800 text-slate-800 hover:text-slate-50 hover:bg-blue-600 cursor-pointer py-4 px-6"
+                type="button"
+                variant={"outline"}
+              >
+                Entre em contato
+              </Button>
+
+              <Button
+                onClick={() => router.push("/politica-privacidade")}
+                className="text-sm z-10 transition-all lg:w-fit w-full border-slate-600 text-slate-800 hover:text-white hover:bg-slate-700/80 cursor-pointer py-4 px-6 gap-2"
+                type="button"
+                variant={"outline"}
+              >
+                <ShieldCheck className="size-4" />
+                Política de Privacidade
+              </Button>
+            </div>
           </div>
           <div className="col-span-1 flex justify-end row-start-1 lg:row-start-auto">
             <iframe
@@ -49,11 +63,20 @@ const Footer = () => {
         </div>
 
         <div className="flex lg:flex-row flex-col justify-between items-center gap-4 border-t border-slate-700 pt-8">
-          <p className="text-sm text-center">
-            © {new Date().getFullYear()} Bv Tracker. Todos direitos reservados.
-          </p>
+          <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-center">
+            <p className="text-slate-300">
+              © {new Date().getFullYear()} BV Tracker. Todos direitos reservados.
+            </p>
+            <span className="hidden sm:inline text-slate-500">•</span>
+            <Link
+              href="/politica-privacidade"
+              className="text-slate-300 hover:text-blue-400 underline underline-offset-4 transition-colors z-10"
+            >
+              Política de Privacidade
+            </Link>
+          </div>
 
-          <span className="text-sm text-center lg:flex-row flex-col items-center flex gap-2 ">
+          <span className="text-sm text-center lg:flex-row flex-col items-center flex gap-2 text-slate-300">
             Desenvolvido por{" "}
             <a
               href="https://github.com/MedradoM"
